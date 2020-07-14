@@ -997,28 +997,28 @@ else {
 
 //   chapter 31-34 Q1
 
-var a= new Date ();
-document.write(a);
+// var a= new Date ();
+// document.write(a);
 
 
 //   chapter 31-34 Q2
 
-var a= new Date ();
-var x = a.toString("");
-var c= x.split("");
-var d= c.slice(4,7)
-var b= d.join("");
-document.write(b);
+// var a= new Date ();
+// var x = a.toString("");
+// var c= x.split("");
+// var d= c.slice(4,7)
+// var b= d.join("");
+// document.write(b);
 
 
 //   chapter 31-34 Q3
 
-var a= new Date ();
-var x = a.toString("");
-var c= x.split("");
-var d= c.slice(0,3)
-var b= d.join("");
-document.write("Today is "+b);
+// var a= new Date ();
+// var x = a.toString("");
+// var c= x.split("");
+// var d= c.slice(0,3)
+// var b= d.join("");
+// document.write("Today is "+b);
 
 
 //   chapter 31-34 Q4
@@ -1377,6 +1377,51 @@ document.write("Today is "+b);
 // document.write("you will have "+hundred+" hundred notes "+ fifty+" fifty notes "+ten+" tens notes");
 // }
 // CalcAmount ()
+
+
+//      chapter 43-48 Q1
+
+// function alert(){
+//     alert("Thank you")
+// }
+
+//      chapter 43-48 Q2
+
+// function msg(){
+//     alert("Thank you for visiting")
+// }
+
+//      chapter 43-48 Q5
+// var a=0;
+// function increase(){
+//     var b= ++a;
+// var count = document.getElementById("counter");
+// count.innerHTML = b;
+// }
+// function decrease(){
+//     var b= --a;
+// var count = document.getElementById("counter");
+// count.innerHTML = b;
+// }
+
+
+function remove(){
+    var element = this.id;
+    element.remove();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
