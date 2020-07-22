@@ -1,55 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
     <!-- chapter 43-48 Q1 -->
     <!-- <div>
         <a id="link" href="#" onclick="alert()">google</a>
     </div> -->
-   
+
     <!-- chapter 43-48 Q2 -->
-<!-- <div>
+    <!-- <div>
     <img onclick="msg()"  src="/images/mbl1.jpg" alt="image 1">
     <img onclick="msg()"  src="/images/mbl2.jpg" alt="image 2">
     <img onclick="msg()"  src="/images/mbl3.jpg" alt="image 3">
     <img onclick="msg()"  src="/images/mbl4.jpg" alt="image 4">
 </div> -->
 
-<!-- chapter 43-48 Q3 -->
+    <!-- chapter 43-48 Q3 -->
 
-<table>
-    <tr>
-    <th>index</th>
-    <th>Name</th>
-    <th>Class</th>
-</tr>
-<tr id="neo">
-    <td>0</td>
-    <td>John</td>
-    <td>10</td>
-    <td><button onclick="remove()">Delete</button></td>
-</tr>
-<tr></tr>
-<tr></tr>
-<tr></tr>
-<tr></tr>
-</table>
+    <!-- <table id="myTable">
+        <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Button</th>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>John</td>
+            <td>10</td>
+            <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Doe</td>
+            <td>9</td>
+            <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Wasi</td>
+            <td>10</td>
+            <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+        </tr>
+    </table> -->
 
-   <!-- chapter 43-48 Q4 -->
-<!-- <div>
+    <!-- chapter 43-48 Q4 -->
+    <!-- <div>
     <img id="image" src="/images/mbl1.jpg" onmouseover="src='/images/mbl4', alt='mbl4'" alt="mbl1"
      onmouseout="src='/images/mbl1', alt='mbl1'" alt="mbl1">
 </div> -->
 
-<!-- chapter 43-48 Q5 -->
+    <!-- chapter 43-48 Q5 -->
 
-<!-- <div>
+    <!-- <div>
     <h1 id="counter">0</h1>
 </div>
 <div>
@@ -57,9 +68,182 @@
     <button onclick="decrease()">Decrease</button>
 </div> -->
 
+<!-- chapter 49-52 Q1 -->
+<!-- not working -->
+<!-- <form action="#" onsubmit="">
+    user Name <input type="text" id="userName"><br>
+    Email: <input type="text"  id="email"><br>
+    Password: <input type="password"  id="password"><br>
+    <input type="submit" value="submit"  onclick="data()"  >
+</form> -->
 
 
+     <!-- chapter 49-52 Q2 -->
 
-    <script src="app.js"></script>
+<!-- <div>
+    <p id="intro">Lorem ipsum, dolor sit amet consectetur adipisicing elit 
+        <a href="javascript:void(0)" onclick="seeMore()">see more</a>
+    </p>
+</div> -->
+
+<!-- chapter 52-57 Q1 -->
+<!-- Modal work -->
+<div id="modal" class="modal">
+    <span class="close" id="modal-close" onclick="onClosedImagModal()">&times;</span>
+    <img class="modal-content" id="modal-img">
+</div>
+<h2>Hint:</h2>
+<p>You can add and remove class like this</p>
+<p>
+    var modal = document.getElementById('modal');
+</p>
+<ul>
+    <li>
+        modal.classList.add('modal-open')
+    </li>
+    <li>
+        modal.classList.remove('modal-close');
+    </li>
+</ul>
+<hr>
+
+<ol>
+    <li>
+        Add modal.html style and html codes in your file
+    </li>
+    <li>
+        Create an array of all images paths.
+    </li>
+    <li>
+        Loop through array and display all images in browser using innerHTML.
+    </li>
+    <li>
+        Add onclick function on each image.
+    </li>
+    <li>
+        On image Function definition get modal using id and assign it to a variable,
+        <br> And on that variable
+        <ul>
+            <li>
+                Add class 'modal-open'
+            </li>
+            <li>
+                Remove class 'modal-close'
+            </li>
+            <li>
+                Add style to display block
+            </li>
+            <li>
+                Assign image path to src
+            </li>
+        </ul>
+    </li>
+    <li>
+
+        On Modal Close Function definition "onClosedImagModal()" get modal using id and assign it to a variable,
+        <br> And on that variable
+        <ul>
+            <li>
+                Add class 'modal-close'
+            </li>
+            <li>
+                Remove class 'modal-open'
+            </li>
+            <li>
+                Set this line in end of function
+                <br /> setTimeout(()=>{ modal.style.display = "none"; }, 550)
+            </li>
+    </li>
+</ol>
+
+
+<!-- chapter 43-48 Q3 →
+<!--
+   <table id="myTable">
+        <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Button</th>
+        </tr>
+  <tr>
+    <td>0</td>
+    <td>John</td>
+    <td>10</td>
+    <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Doe</td>
+    <td>9</td>
+    <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Wasi</td>
+    <td>10</td>
+    <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+  </tr>
+</table>
+-->
+
+
+<!-- chapter 49-52 Q1-->
+<!--
+<form onSubmit="">
+   <label for="userName">User Name</label>
+   <input type="text" id="userName"><br />
+   <label for="email">Email</label>
+   <input type="email" id="email"><br />
+   <label for="password">Password</label>
+   <input type="password" id="password"><br />
+   <button onclick="submit()">Submit</button>
+    </form>
+    
+    <div>
+    <p id="newuser"></p>
+    <p id="newemail"></p>
+    <p id="newpass"></p>
+    </div>-->
+
+<!-- chapter 53-58 -->
+
+<!-- 
+<div>
+            <img onclick="change()" id="img1" src="" alt="img1">
+            <img id="img2" src="" alt="img2">
+            <img id="img3" src="" alt="img3">
+            <img id="img4" src="" alt="img4">
+            <p id="p">dhjhdjjs</p>
+            <button onclick="zoomIn()">+</button>
+            <button onclick="zoomOut()">-</button>
+        </div>
+      →
+<!-- Chapter 58-67 -->
+<!--
+<div> <h1>  DOM  </h1> 
+        <div  id=”form-content”  class=”content”> 
+     <label  for=”first-name”>First  Name <label> 
+       <input  type=”text”  id=”first-name”  /> 
+      <label  for=”last-name”>Last  Name<label> 
+       <input  type=”text”  id=”last-name”  /> <label  for=”email”>Email</label> 
+       <input  type=”text”  id=”email”  /> 
+       </div> 
+       <div  id=”main-content”  class=”content”> 
+       <p  class=”render”>  First  Name :  Alex</p> 
+       <p  class=”render”  id=”lastName”>Last  Name:  Bank</p> 
+       <p  class=”render”>  Email  :  alexbank@example.com</p> 
+       <p  class=”render”>  Country  :  Pakistan  </p> 
+       <p  class=”render”>  contact  :  +92  300  1234567</p> 
+       </div> 
+       </div>
+-->
+
+
+   
+
+
+<script src="app.js"></script>
 </body>
+
 </html>

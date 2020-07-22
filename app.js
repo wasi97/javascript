@@ -1390,6 +1390,11 @@ else {
 // function msg(){
 //     alert("Thank you for visiting")
 // }
+//      chapter 43-48 Q3
+// function deleteRow(r) {
+//     var i = r.parentNode.parentNode.rowIndex;
+//     document.getElementById("myTable").deleteRow(i);
+//   }
 
 //      chapter 43-48 Q5
 // var a=0;
@@ -1404,11 +1409,125 @@ else {
 // count.innerHTML = b;
 // }
 
+//     chapter 49-52 Q1 not working
 
-function remove(){
-    var element = this.id;
-    element.remove();
+// function data(){
+//    var userName= document.getElementById("userName").value;
+//    document.write("User Name: "+userName);
+//    var email= document.getElementById("email").value;
+//    document.write("Email: "+email)
+//    var password= document.getElementById("password").value;
+//    document.write("Password: "+password)
+// }
+
+//     chapter 49-52 Q2
+
+// function seeMore(){
+
+// var more= "Lorem ipsum, dolor sit amet consectetur adipisicing elit Autem maiores odio cupiditate, atque, oloremque a quidem ducimus cum quis alias aliquid similique deleniti iusto exercitationem velit cumque quos quas laudantium!"
+// document.getElementById("intro").innerHTML= more;
+// }
+
+
+
+// chapter 43-48 Q3
+
+//function deleteRow(r) {
+ // var i = r.parentNode.parentNode.rowIndex;
+  //document.getElementById("myTable").deleteRow(i);
 }
+
+// chapter 49-52
+
+//function submit(){
+
+ // var user=  document.getElementById("userName")
+//  var email= document.getElementById ("email")
+ // var pass = document.getElementById ("password")
+//  var newuser= document.getElementById("newuser");
+//  var newemail = document.getElementById("newemail");
+ // var newpass = document.getElementById("newpass");
+ 
+// newuser.innerHTML = user.innerHTML 
+// newemail.innerHTML = email.innerHTML 
+// newpass.innerHTML = pass.innerHTML }
+  
+// chapter 53-58
+
+//function change(){
+   // document.getElementById("img1").className = "pic"}
+
+//document.getElementById ("img2")
+
+
+
+//function zoomIn() {
+// var a=10;
+// var p= document.getElementById("p")
+// p.style.fontSize =(a + 10) +"px"}
+ 
+//function zoomOut() {
+ //var a=20;
+ //var p= document.getElementById("p")
+ //p.style.fontSize =(a - 10) +"px"}
+
+// chapter 58-67
+
+//    chapter 58-67 Q1
+//    i,ii
+//var main= document.getElementById("main-content");
+//var child= main.childNode;
+//console.log(child)
+
+
+//    iii
+//var a= document.getElementsByClassName("render")
+//var b= a.innerHTML.value;
+//console.log(b)
+   // iv 
+//var first = document.getElementById("first-Name");
+ //first.innerHTML = "john";
+     // v
+ //var last = document.getElementById("last-Name");
+ //first.innerHTML = " doe";
+ //var email = document.getElementById("email");
+ //first.innerHTML = "johndoe@john.com";
+ 
+  //    chapter 58-67 Q2
+  //  i
+ // var form= document.getElementById("form-content");
+ //var nodetype=  form.nodeType;
+ //console.log(nodetype )
+ 
+ //   ii
+ 
+ // var last= document.getElementById("last-name");
+ //var nodetypeLast=  last.nodeType;
+ // var lastNameChild= last.child;
+ //console.log(nodetypeLast )
+ // console.log(lastNameChild)
+ 
+ //     iv
+ 
+// var main= document.getElementById("main-content");
+// var firstChild= main.firstChild;
+// var lastChild= main.lastChild;
+// console.log(firstChild , lastChild  )
+
+//    v
+
+//var last = document.getElementById("last-name")
+//var next = last.nextSibling;
+//var pre = last.previousSibling
+// console.log(next, pre)
+
+//    vi
+
+//var mail = document.getElementById("email")
+//var parent = mail.parentNode;
+//var nodetype = mail.nodeType;
+// console.log(parent, nodetype )
+
 
 
 
